@@ -1,6 +1,6 @@
 <component name="libraryTable">
   <library name="org.seleniumhq.selenium:selenium-java:4.0.0-alpha-6" type="repository">
-    <properties maven-id="org.seleniumhq.selenium:selenium-java:4.0.0-alpha-6" />
+    <properties maven-id="org.seleniumhq.selenium:selenium-java:LATEST" />
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/selenium-java-4.0.0-alpha-6.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/selenium-api-4.0.0-alpha-6.jar!/" />
