@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeClass;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase {
-  private WebDriver driver;
+  public WebDriver driver;
   private boolean acceptNextAlert = true;
 
   @BeforeClass(alwaysRun = true)
@@ -60,5 +60,13 @@ public class TestBase {
   @AfterClass(alwaysRun = true)
   public void tearDown() {
     driver.quit();
+  }
+
+  protected void deleteSeletedGroups() {
+    driver.findElement(By.name("delete")).click();
+  }
+
+  protected void selectGroup() {
+    driver.findElement(By.name("selected[]")).click();
   }
 }
