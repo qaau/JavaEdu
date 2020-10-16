@@ -1,6 +1,5 @@
 package tests.appmanager;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -11,7 +10,6 @@ public class ApplicationManager {
   private SessionHelper sessionHelper;
   private NavigationHelper navigationHelper;
   private GroupHelper groupHelper;
-  public boolean acceptNextAlert = true;
 
   public void init() {
     driver = new ChromeDriver();
