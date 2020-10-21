@@ -7,7 +7,7 @@ import tests.appmanager.ApplicationManager;
 
 public class TestBase {
 
-  protected final ApplicationManager app = new ApplicationManager(BrowserType.FIREFOX);
+  protected final ApplicationManager app = new ApplicationManager(BrowserType.CHROME);
 
   @BeforeClass(alwaysRun = true)
   public void setUp() {
