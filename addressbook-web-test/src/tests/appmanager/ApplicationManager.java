@@ -31,6 +31,7 @@ public class ApplicationManager {
     navigationHelper = new NavigationHelper(driver);
     sessionHelper = new SessionHelper(driver);
     sessionHelper.login("admin", "secret");
+    contactHelper = new ContactHelper(driver);
   }
 
   public void stop() {

@@ -10,7 +10,8 @@ public class ContactHelper extends HelperBase{
     super(driver);
   }
 
-  public void submitContactForm() {click(By.name("submit"));
+  public void submitContactForm() {
+    click(By.name("submit"));
   }
 
   public void fillContactForm(ContactData contactData) {
@@ -19,6 +20,5 @@ public class ContactHelper extends HelperBase{
     type(By.name("address"), contactData.getAddress());
   }
 
-  public void initContactCreation() {click(By.linkText("add new"));
-  }
+  public void initContactCreation() { click(By.linkText("add new")); }
 }
