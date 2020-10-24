@@ -13,6 +13,9 @@ public class ContactHelper extends HelperBase{
   public void submitContactForm() {
     click(By.name("submit"));
   }
+  public void updateContactForm() {
+    click(By.name("update"));
+  }
 
   public void fillContactForm(ContactData contactData) {
     type(By.name("firstname"), contactData.getName());
@@ -21,4 +24,6 @@ public class ContactHelper extends HelperBase{
   }
 
   public void initContactCreation() { click(By.linkText("add new")); }
+
+  public void initContactModification() { click(By.xpath("//*[@title='Edit']")); }
 }
