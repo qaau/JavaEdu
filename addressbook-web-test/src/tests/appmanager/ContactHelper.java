@@ -40,5 +40,18 @@ public class ContactHelper extends HelperBase{
 
   public void deleteSelected() { click(By.cssSelector("input[value='Delete']")); }
 
+  public void returnToHomePage() {click(By.linkText("home")); }
+
   public void alertApprove() { driver.switchTo().alert().accept();}
+
+  public void createContact(ContactData data) {
+    initContactCreation();
+    fillContactForm(data, true);
+    submitContactForm();
+    returnToHomePage();
+  }
+
+  public boolean isThereAContact() {
+    return isElementPresent(By.name("selected[]"));
+  }
 }
