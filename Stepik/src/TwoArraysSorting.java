@@ -6,7 +6,6 @@ public class TwoArraysSorting {
     int n = in.nextInt();
     if (n < 1 || n > 1000) return;
     int[] a = new int[n];
-    String count = "";
 
     for (int i = 0; i < n; i++) {
       a[i] = in.nextInt();
